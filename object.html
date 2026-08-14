@@ -17,11 +17,16 @@
 
        
             
-            document.write(`${student.name} <br>`);
-            document.write(`${student.class} <br>`);
-            document.write(`${student.course} <br>`);
-            document.write(`${student.fee} <br>`);
-            document.write(student);
+            // document.write(`${student.name} <br>`);
+            // document.write(`${student.class} <br>`);
+            // document.write(`${student.course} <br>`);
+            // document.write(`${student.fee} <br>`);
+            // for(let key of Object.keys(student)){
+            //     console.log(key, student[key]);
+            // }
+            for(let x in student){
+                document.write(student[x] + "<br>");
+            }
     </script>
 </body>
 </html>
