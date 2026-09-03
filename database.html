@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const dataBase = {
+        //     student1 :{
+        //         name: "faizan",
+        //         branch: "Btech",
+        //         rollno: 23,
+        //         fee: 128000
+        //     },
+        //     student2 :{
+        //         name: "rahul",
+        //         branch: "Btech",
+        //         rollno: 18,
+        //         fee: 165000
+        //     },
+        //     student3 :{
+        //         name: "pratik",
+        //         branch: "Mtech",
+        //         rollno: 43,
+        //         fee: 130000
+        //     },
+        //     student4 :{
+        //         name: "naman",
+        //         branch: "Mtech",
+        //         rollno: 24,
+        //         fee: 185000
+        //     },
+        //     student5 :{
+        //         name: "piyush",
+        //         branch: "10th",
+        //         rollno: 40,
+        //         fee: 128000
+        //     },
+        // }
+
+        const students = {
+            student:[{
+                name:"ritesh",
+                branch:"btech",
+                fee:10000
+
+            },
+            {
+                name:"faizan",
+                branch:"btech",
+                fee:10042
+            },
+            
+            {
+                name:"rahul",
+                branch:"betch",
+                fee:104240
+            },
+
+            {
+                name:"akhil",
+                branch:"mtech",
+                fee:12400
+            },
+
+            {
+                name:"modi",
+                branch:"10",
+                fee:12400
+            }
+        ]
+        }
+
+        let choice = prompt("Enter Branch");
+        let Newstudent = students.student.filter((i)=>(choice===i.branch));
+        console.log(Newstudent);
+
+    </script>
+</body>
+</html>
